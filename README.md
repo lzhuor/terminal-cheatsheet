@@ -48,7 +48,11 @@ k delete -f deployment.yaml
 k delete pods -l k8s-app=go-socket-io --namespace staging      
 ```
 
-## AWS Profile
+## AWS [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
+```
+export AWS_PROFILE=hashnest // custom profile
+export AWS_PROFILE=default // default profile
+```
 
 ## AWS ECR
 
