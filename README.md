@@ -70,6 +70,12 @@ export AWS_PROFILE=default // default profile
 aws eks update-kubeconfig --name xxx-cluster-v2
 ```
 
+## GCP
+1. Config kubectl profile
+```
+gcloud container clusters get-credentials qa-cluster-2 --zone=asia-southeast1
+```
+
 ## Tiller Server
 ```
 export TILLER_NAMESPACE=tiller 
