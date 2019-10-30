@@ -9,6 +9,7 @@ cd $ZSH_CUSTOM
 ```
  vim $ZSH_CUSTOM/aliases.zsh 
 ```
+
 ## SSH
 1. SSH
 ```
