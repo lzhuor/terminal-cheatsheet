@@ -67,7 +67,7 @@ export AWS_PROFILE=default // default profile
 ```
 2. Config kubectl profile
 ```
-aws eks update-kubeconfig --name chat-chat-prod-v2
+aws eks update-kubeconfig --name xxx-cluster-v2
 ```
 
 ## Tiller Server
