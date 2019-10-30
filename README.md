@@ -47,6 +47,11 @@ k delete -f deployment.yaml
 ```
 k delete pods -l k8s-app=go-socket-io --namespace staging      
 ```
+4. AWS EKS secret
+```
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
+```
+5. GCP secret
 
 ## AWS [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 ```
@@ -54,5 +59,9 @@ export AWS_PROFILE=hashnest // custom profile
 export AWS_PROFILE=default // default profile
 ```
 
-## AWS ECR
+## Tiller Server
+```
+export TILLER_NAMESPACE=tiller 
+tiller -listen=localhost:44134 -storage=secret -logtostderr
+```
 
