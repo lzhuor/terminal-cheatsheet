@@ -30,7 +30,8 @@ docker tag "$IMAGE_ID" xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 docker push xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
 
-## Kubernetes
+## Kubernetes 
+Note: I use `k` as an alias of `kubectl`
 1. List all pods in the namespace, with more details (thanks ❤️ [@chhetripradeep](https://github.com/chhetripradeep))
 ```
 k get pods -o wide --namespace staging
