@@ -1,5 +1,14 @@
-# zsh
+# 🚀John's awesome zsh
 
+## ZSH
+1. Change dir to $ZSH_CUSTOM
+```
+cd $ZSH_CUSTOM
+```
+2. Edit alias file
+```
+ vim $ZSH_CUSTOM/aliases.zsh 
+```
 ## SSH
 1. SSH
 ```
