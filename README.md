@@ -53,6 +53,10 @@ echo "http://$ELB"
 ```
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
 ```
+6. AWS EKS aws-auth configmap
+```
+kubectl -n kube-system describe configmap aws-auth
+```
 
 ## AWS [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 ```
