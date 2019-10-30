@@ -58,10 +58,16 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 kubectl -n kube-system describe configmap aws-auth
 ```
 
-## AWS [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
+
+## AWS
+1. [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 ```
 export AWS_PROFILE=hashnest // custom profile
 export AWS_PROFILE=default // default profile
+```
+2. Config kubectl profile
+```
+aws eks update-kubeconfig --name chat-chat-prod-v2
 ```
 
 ## Tiller Server
