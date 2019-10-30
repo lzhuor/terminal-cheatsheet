@@ -31,7 +31,7 @@ docker tag "$IMAGE_ID" xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
 3. Push Docker image
 ```
-docker push 284590922863.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
+docker push xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
 
 ## Kubernetes
