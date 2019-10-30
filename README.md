@@ -47,11 +47,15 @@ k delete -f deployment.yaml
 ```
 k delete pods -l k8s-app=go-socket-io --namespace staging      
 ```
-4. AWS EKS secret
+4. Get ELB host of a service
+```
+export ELB=$(kubectl get svc -n grafana grafana -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+echo "http://$ELB"
+```
+5. AWS EKS secret
 ```
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
 ```
-5. GCP secret
 
 ## AWS [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 ```
