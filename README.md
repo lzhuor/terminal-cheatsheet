@@ -1,7 +1,7 @@
 # 🚀John's awesome zsh
 
 ## ZSH
-1. Change dir to $ZSH_CUSTOM
+1. Change dir to `$ZSH_CUSTOM`
 ```
 cd $ZSH_CUSTOM
 ```
