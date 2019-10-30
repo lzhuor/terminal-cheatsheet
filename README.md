@@ -35,7 +35,7 @@ docker push xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
 
 ## Kubernetes
-1. List all pods in the namespace, with more details 
+1. List all pods in the namespace, with more details (thanks @chhetripradeep)
 ```
 k get pods -o wide --namespace staging
 ```
