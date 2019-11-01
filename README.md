@@ -16,6 +16,14 @@ ssh -i private-key.pem ubuntu@1.1.1.1
 scp -i private-key.pem ubuntu@1.1.1.1:server.log /Desktop/dev
 ```
 
+## Linux / Unix
+1. Restart service (NGINX example)
+```
+service nginx start
+service nginx stop
+service nginx reload
+```
+
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
 ```
@@ -57,7 +65,6 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 ```
 kubectl -n kube-system describe configmap aws-auth
 ```
-
 
 ## AWS
 1. [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
