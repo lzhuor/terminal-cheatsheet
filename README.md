@@ -43,6 +43,7 @@ Note: I use `k` as an alias of `kubectl`
 1. List all pods in the namespace, with more details (thanks ❤️ [@chhetripradeep](https://github.com/chhetripradeep))
 ```
 k get pods -o wide --namespace staging
+k get pods -o wide --all-namespaces
 ```
 2. Delete resources from config yaml
 ```
