@@ -23,6 +23,10 @@ service nginx start
 service nginx stop
 service nginx reload
 ```
+2. Kill process by port
+```
+kill $(lsof -t -i:4000) 
+```
 
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
