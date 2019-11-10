@@ -27,6 +27,10 @@ service nginx reload
 ```
 kill $(lsof -t -i:4000) 
 ```
+3. Default dir
+```
+cd /etc/nginx
+```
 
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
