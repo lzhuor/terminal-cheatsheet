@@ -45,6 +45,14 @@ docker tag "$IMAGE_ID" xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
 docker push xxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/go-socket-io
 ```
+4. Remove dangling images
+```
+docker image prune
+```
+5. Remove image
+```
+docker image rm zenbot_server --force // force
+```
 
 ## Kubernetes 
 Note: I use `k` as an alias of `kubectl`
