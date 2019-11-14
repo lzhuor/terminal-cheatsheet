@@ -112,6 +112,13 @@ aws eks update-kubeconfig --name xxx-cluster-v2
 gcloud container clusters get-credentials qa-cluster-2 --zone=asia-southeast1
 ```
 
+## Helm
+1. Start Helm client
+```
+export HELM_HOST=:44134 
+helm init --client-only             
+```
+
 ## Tiller Server
 ```
 export TILLER_NAMESPACE=tiller 
