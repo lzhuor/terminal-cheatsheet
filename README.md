@@ -53,6 +53,14 @@ docker image prune
 ```
 docker image rm zenbot_server --force // force
 ```
+6. Build image with args
+```
+docker build --build-arg SSH_PRIVATE_KEY="$(cat ./bucket_privatekey)" --build-arg SSH_PUBLIC_KEY="$(cat ./bucket_pubkey)" -t go-socket-io .
+```
+7. Run an image with ENV variables; port forward
+```
+docker run --rm -p 3000:3000 -e "RAILS_ENV=staging" my-rails-app:latest
+```
 
 ## Kubernetes 
 Note: I use `k` as an alias of `kubectl`
