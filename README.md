@@ -61,6 +61,10 @@ docker build --build-arg SSH_PRIVATE_KEY="$(cat ./bucket_privatekey)" --build-ar
 ```
 docker run --rm -p 3000:3000 -e "RAILS_ENV=staging" my-rails-app:latest
 ```
+8. Start and SSH into the container, good for *debug* and *develop* Dockerfile  
+```
+docker start -a -i 912176b700a38fb0eaadee778f217030e4acf23066688c8d262d71a5d834b9e0
+```
 
 ## Kubernetes 
 Note: I use `k` as an alias of `kubectl`
