@@ -125,3 +125,9 @@ export TILLER_NAMESPACE=tiller
 tiller -listen=localhost:44134 -storage=secret -logtostderr
 ```
 
+## Utils
+1. Tail log real-time
+```
+tail -f output.log
+```
+
