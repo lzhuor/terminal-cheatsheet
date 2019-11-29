@@ -32,6 +32,13 @@ kill $(lsof -t -i:4000)
 cd /etc/nginx
 ```
 
+## Debian
+1. apt update and installation
+```
+sudo apt update
+sudo apt install git
+```
+
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
 ```
