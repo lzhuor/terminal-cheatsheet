@@ -101,6 +101,10 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 ```
 kubectl -n kube-system describe configmap aws-auth
 ```
+7. Get log of a Pod
+```
+k logs pod-a7x0gafg --namespace staging
+```
 
 ## AWS
 1. [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
