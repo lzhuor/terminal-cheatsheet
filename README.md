@@ -142,3 +142,9 @@ tiller -listen=localhost:44134 -storage=secret -logtostderr
 tail -f output.log
 ```
 
+## NPM / YARN
+1. Upgrade Yarn
+```
+npm upgrade --global yarn 
+```
+
