@@ -148,3 +148,9 @@ tail -f output.log
 npm upgrade --global yarn 
 ```
 
+## MongoDB
+1. Connection URI
+```
+mongodb://<username>:<password>@<hosts>:<port>/<database>?authSource=<authDatabase>
+```
+
