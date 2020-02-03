@@ -154,3 +154,8 @@ npm upgrade --global yarn
 mongodb://<username>:<password>@<hosts>:<port>/<database>?authSource=<authDatabase>
 ```
 
+## Flutter
+1. Switch Flutter version:
+```
+flutter channel <env>
+```
