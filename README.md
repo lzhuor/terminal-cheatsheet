@@ -159,3 +159,11 @@ mongodb://<username>:<password>@<hosts>:<port>/<database>?authSource=<authDataba
 ```
 flutter channel <env>
 ```
+2. Build Android 
+```
+flutter bundle
+```
+3. Build iOS (Release & No Codesign)
+```
+flutter build ios --release --no-codesign
+```
