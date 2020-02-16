@@ -167,3 +167,15 @@ flutter bundle
 ```
 flutter build ios --release --no-codesign
 ```
+4. Flutter Upgrade
+```
+flutter upgrade
+```
+5. Flutter Clean
+```
+flutter clean
+```
+6. Flutter Run
+```
+flutter run -d <deviceId>
+```
