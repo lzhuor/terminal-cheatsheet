@@ -179,3 +179,7 @@ flutter clean
 ```
 flutter run -d <deviceId>
 ```
+7. Fluter build part file
+```
+flutter pub run build_runner build
+```
