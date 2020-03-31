@@ -179,7 +179,8 @@ flutter clean
 ```
 flutter run -d <deviceId>
 ```
-7. Fluter build part file
+7. Fluter build part file (w/o deletion of existing files)
 ```
 flutter pub run build_runner build
+flutter packages pub run build_runner watch --delete-conflicting-outputs
 ```
