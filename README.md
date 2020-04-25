@@ -184,3 +184,7 @@ flutter run -d <deviceId>
 flutter pub run build_runner build
 flutter packages pub run build_runner watch --delete-conflicting-outputs
 ```
+8. Flutter Code Gen - translate Intl messages in Dart to arb files
+```
+flutter pub run intl_translation:extract_to_arb --output-dir=assets/intl ./lib/**/*.dart
+```
