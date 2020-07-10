@@ -154,6 +154,17 @@ npm upgrade --global yarn
 mongodb://<username>:<password>@<hosts>:<port>/<database>?authSource=<authDatabase>
 ```
 
+## SDKMan
+1. List SDKs
+```
+sdk list java
+```
+
+2. Install SDKs
+```
+sdk install java 8.0.252.hs-adpt
+```
+
 ## Flutter
 1. Switch Flutter version:
 ```
