@@ -199,3 +199,10 @@ flutter packages pub run build_runner watch --delete-conflicting-outputs
 ```
 flutter pub run intl_translation:extract_to_arb --output-dir=assets/intl ./lib/**/*.dart
 ```
+
+# Database
+## Cassandra
+1. Alter Keyspace replication (for local)
+```cql
+ALTER KEYSPACE message WITH REPLICATION = { 'class' : 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '1' };
+```
