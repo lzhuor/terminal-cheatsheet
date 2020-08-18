@@ -39,6 +39,12 @@ sudo apt update
 sudo apt install git
 ```
 
+## Yarn
+1. See why dependency exists
+```
+yarn why <package>
+```
+
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
 ```
