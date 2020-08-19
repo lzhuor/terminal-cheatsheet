@@ -39,12 +39,6 @@ sudo apt update
 sudo apt install git
 ```
 
-## Yarn
-1. See why dependency exists
-```
-yarn why <package>
-```
-
 ## Docker
 1. Build Docker image and assign tag to $IMAGE_ID
 ```
@@ -153,6 +147,12 @@ tail -f output.log
 ```
 npm upgrade --global yarn 
 ```
+
+2. See why dependency exists
+```
+yarn why <package>
+```
+
 
 ## MongoDB
 1. Connection URI
