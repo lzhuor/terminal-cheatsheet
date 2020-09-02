@@ -102,8 +102,12 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 kubectl -n kube-system describe configmap aws-auth
 ```
 7. Get log of a Pod
-```
+```shell
+# Log
 k logs pod-a7x0gafg --namespace staging
+
+# Tail the log and grep
+k logs --follow ghost-proxy-5496664987-qmbvh --namespace silver-prod | grep 'chicken'
 ```
 
 ## AWS
