@@ -107,7 +107,7 @@ kubectl -n kube-system describe configmap aws-auth
 k logs pod-a7x0gafg --namespace staging
 
 # Tail the log and grep
-k logs --follow ghost-proxy-5496664987-qmbvh --namespace silver-prod | grep 'chicken'
+k logs --follow ghost-proxy-5496664987-qmbvh --namespace prod | grep 'chicken'
 ```
 
 ## AWS
