@@ -216,3 +216,10 @@ flutter pub run intl_translation:extract_to_arb --output-dir=assets/intl ./lib/*
 ```cql
 ALTER KEYSPACE message WITH REPLICATION = { 'class' : 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '1' };
 ```
+
+# Android
+## ADB
+1. Send SMS
+```shell
+adb emu sms send <sender> <msg>
+```
