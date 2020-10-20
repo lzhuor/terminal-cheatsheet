@@ -163,6 +163,17 @@ yarn why <package>
 ```
 mongodb://<username>:<password>@<hosts>:<port>/<database>?authSource=<authDatabase>
 ```
+2. Aggregate Query:
+```
+db.getCollection('customerjourneys').aggregate(
+    [{
+        $group : {
+            _id : { month: { $month: "$createdAt" }, day: { $dayOfMonth: "$createdAt" }, year: { $year: "$createdAt" } },
+            dailyEvents: { $sum: 1 }
+                }
+            }
+    ] )
+```
 
 ## SDKMan
 1. List SDKs
