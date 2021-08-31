@@ -110,6 +110,12 @@ k logs pod-a7x0gafg --namespace staging
 k logs --follow ghost-proxy-5496664987-qmbvh --namespace prod | grep 'chicken'
 ```
 
+## Spinnaker
+1. For anyone that wants to have the old spinnaker capabilities back (basically, being able to rollback a deployment from the UI), we can use a little hack. Go to your browsers console, and set:
+```
+window.spinnakerSettings.kubernetesAdHocInfraWritesEnabled = true;
+```
+
 ## AWS
 1. [Named Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 ```
