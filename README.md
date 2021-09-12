@@ -133,6 +133,16 @@ aws eks update-kubeconfig --name xxx-cluster-v2
 gcloud container clusters get-credentials qa-cluster-2 --zone=asia-southeast1
 ```
 
+2. Bucket: Upload files to a Bucket Folder
+```
+gsutil cp ./build/main.js gs://cdn/dir/
+```
+
+3. Bucket: Add allUsers (public Internet) access to a file
+```
+gsutil acl ch -u AllUsers:R gs://cdn/dir/main.js
+```
+
 ## Helm
 1. Start Helm client
 ```
