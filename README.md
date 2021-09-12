@@ -147,6 +147,7 @@ gsutil acl ch -u AllUsers:R gs://cdn/dir/main.js
 3. Add metadata to a Bucket file
 ```
 gsutil setmeta -h "cache-control:max-age=0" gs://cdn/dir/main.js
+// gsutil setmeta -h "METADATA_KEY:METADATA_VALUE" gs://BUCKET_NAME/OBJECT_NAME
 ```
 
 4. Get stats of a Bucket file
