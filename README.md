@@ -133,22 +133,23 @@ aws eks update-kubeconfig --name xxx-cluster-v2
 gcloud container clusters get-credentials qa-cluster-2 --zone=asia-southeast1
 ```
 
-2. Bucket: Upload files to a Bucket Folder
+#### Bucket
+2. Upload files to a Bucket Folder
 ```
 gsutil cp ./build/main.js gs://cdn/dir/
 ```
 
-3. Bucket: Add allUsers (public Internet) access to a file
+3. Add allUsers (public Internet) access to a file
 ```
 gsutil acl ch -u AllUsers:R gs://cdn/dir/main.js
 ```
 
-4. Bucket: Add metadata to a Bucket file
+4. Add metadata to a Bucket file
 ```
 gsutil setmeta -h "cache-control:max-age=0" gs://cdn/dir/main.js
 ```
 
-5. Bucket: Get stats of a Bucket file
+5. Get stats of a Bucket file
 ```
 gsutil stat gs://BUCKET_NAME/OBJECT_NAME
 ```
