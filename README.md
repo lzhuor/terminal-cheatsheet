@@ -143,6 +143,16 @@ gsutil cp ./build/main.js gs://cdn/dir/
 gsutil acl ch -u AllUsers:R gs://cdn/dir/main.js
 ```
 
+4. Bucket: Add metadata to a Bucket file
+```
+gsutil setmeta -h "cache-control:max-age=0" gs://cdn/dir/main.js
+```
+
+5. Bucket: Get stats of a Bucket file
+```
+gsutil stat gs://BUCKET_NAME/OBJECT_NAME
+```
+
 ## Helm
 1. Start Helm client
 ```
