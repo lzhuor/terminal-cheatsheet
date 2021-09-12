@@ -1,4 +1,4 @@
-# 🚀John's awesome zsh
+# 🚀John's awesome zsh with examples
 
 ## ZSH
 1. Edit my alias file
