@@ -16,6 +16,11 @@ ssh -i private-key.pem ubuntu@1.1.1.1
 scp -i private-key.pem ubuntu@1.1.1.1:server.log /Desktop/dev
 ```
 
+3. Copy SSH pub key
+```
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
 ## Linux / Unix
 1. Restart service (NGINX example)
 ```
